@@ -46,7 +46,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorizeRequest ->
                         authorizeRequest
                                 .requestMatchers("/manager/**").hasRole("manager")
-                                .requestMatchers("/customer/**").hasRole("customer")
+                                .requestMatchers("/user/**").hasRole("user")
                                 .anyRequest().permitAll()
                 )
                 // Filter 추가.
