@@ -61,8 +61,6 @@ public class SecurityConfig {
         return new ApiAuthenticationSuccessHandler();
     }
 
-
-
     public AbstractAuthenticationProcessingFilter abstractAuthenticationProcessingFilter(
             final AuthenticationManager authenticationManager,
             final AuthenticationSuccessHandler authenticationSuccessHandler) {
