@@ -17,9 +17,9 @@ public class CustomUserDetailsService implements UserDetailsService {
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public Users loadUserByUsername(String username) throws UsernameNotFoundException {
         Set<String> authorityList = new HashSet<>();
-        authorityList.add("user");
+        authorityList.add("ROLE_USER");
 
         return Users.builder()
                 .username("hyeonu")
